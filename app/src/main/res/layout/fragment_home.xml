@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="400dp"
+        android:src="@drawable/bla" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="328dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/editTextHomeFragEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_square"
+            android:hint="Email"
+            android:minHeight="48dp"
+            android:paddingLeft="15dp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/editTextHomeFragPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_square"
+            android:hint="Password"
+            android:minHeight="48dp"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/buttonHomeFragLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_design"
+            android:text="Login" />
+
+        <TextView
+            android:id="@+id/textViewAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Don't have an account? Register here:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonHomeFragRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_design"
+            android:minHeight="48dp"
+            android:text="Register"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+    </LinearLayout>
+
+</FrameLayout>

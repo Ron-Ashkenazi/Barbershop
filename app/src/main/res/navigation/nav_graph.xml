@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.barbershop.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_adminFragment"
+            app:destination="@id/adminFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_userFragment"
+            app:destination="@id/userFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.barbershop.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="com.example.barbershop.AdminFragment"
+        android:label="fragment_admin"
+        tools:layout="@layout/fragment_admin" >
+        <argument
+            android:name="adminEmail"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_adminFragment_to_adminWorkHoursFragment"
+            app:destination="@id/adminWorkHoursFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_adminFragment_to_adminAddDayOff"
+            app:destination="@id/adminAddDayOff"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_adminFragment_to_recycleViewFragment"
+            app:destination="@id/recycleViewFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_adminFragment_to_adminWorkHoursFragment2"
+            app:destination="@id/adminWorkHoursFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_adminFragment_to_adminMyAppointmentsRecycleViewFragment"
+            app:destination="@id/adminMyAppointmentsRecycleViewFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.barbershop.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" >
+        <argument
+            android:name="userEmail"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_userFragment_to_pickBarberFragment"
+            app:destination="@id/pickBarberFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_userFragment_to_userMyAppointmentsRecycleViewFragment"
+            app:destination="@id/userMyAppointmentsRecycleViewFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminWorkHoursFragment"
+        android:name="com.example.barbershop.adminChangeWorkHoursFragment"
+        android:label="fragment_admin_change_work_hours"
+        tools:layout="@layout/fragment_admin_change_work_hours">
+        <argument
+            android:name="emailAdminWorkHoursString"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminAddDayOff"
+        android:name="com.example.barbershop.adminAddDayOff"
+        android:label="fragment_admin_add_day_off"
+        tools:layout="@layout/fragment_admin_add_day_off" >
+        <argument
+            android:name="emailAdminAddDayOff"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/recycleViewFragment"
+        android:name="com.example.barbershop.AdminDaysOffRecycleViewFragment"
+        android:label="fragment_recycle_view"
+        tools:layout="@layout/fragment_admin_days_off_recycle_view" >
+        <argument
+            android:name="emailAdminDaysOff"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminWorkHoursFragment2"
+        android:name="com.example.barbershop.adminWorkHoursFragment"
+        android:label="fragment_admin_work_hours"
+        tools:layout="@layout/fragment_admin_work_hours" >
+        <argument
+            android:name="emailAdminMyWorkHoursString"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/pickBarberFragment"
+        android:name="com.example.barbershop.pickBarberFragment"
+        android:label="fragment_pick_barber"
+        tools:layout="@layout/fragment_pick_barber" >
+        <action
+            android:id="@+id/action_pickBarberFragment_to_userMakeAppointmentFragment"
+            app:destination="@id/userMakeAppointmentFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="userEmail"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/userMakeAppointmentFragment"
+        android:name="com.example.barbershop.userMakeAppointmentFragment"
+        android:label="fragment_user_make_appointment"
+        tools:layout="@layout/fragment_user_make_appointment" >
+        <argument
+            android:name="userEmail"
+            app:argType="string" />
+        <argument
+            android:name="barberEmail"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminMyAppointmentsRecycleViewFragment"
+        android:name="com.example.barbershop.AdminMyAppointmentsRecycleViewFragment"
+        android:label="fragment_admin_my_appointments_recycle_view"
+        tools:layout="@layout/fragment_admin_my_appointments_recycle_view" >
+        <argument android:name="emailAdminMyAppointments"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/userMyAppointmentsRecycleViewFragment"
+        android:name="com.example.barbershop.UserMyAppointmentsRecycleViewFragment"
+        android:label="fragment_user_my_appointments_recycle_view"
+        tools:layout="@layout/fragment_user_my_appointments_recycle_view" >
+        <argument
+            android:name="userEmailMyAppointments"
+            app:argType="string" />
+    </fragment>
+</navigation>

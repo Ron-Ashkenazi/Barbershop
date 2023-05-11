@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "570550858268",
+    "firebase_url": "https://barbershop-ce62b-default-rtdb.firebaseio.com",
+    "project_id": "barbershop-ce62b",
+    "storage_bucket": "barbershop-ce62b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570550858268:android:d0b406f8935451c161e5d9",
+        "android_client_info": {
+          "package_name": "com.example.barbershop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570550858268-2uv65rpd1170db4k9ms2ivd6bc73pqsa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLIoCMlbpS6lsXdGZWzTN_yEIXMkoiEr0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570550858268-2uv65rpd1170db4k9ms2ivd6bc73pqsa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

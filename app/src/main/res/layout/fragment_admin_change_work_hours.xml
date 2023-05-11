@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    tools:context=".adminChangeWorkHoursFragment">
+
+    <TextView
+        android:id="@+id/textViewSelectDay"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_square"
+        android:gravity="center"
+        android:text="Select day:"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <Spinner
+        android:id="@+id/spinnerDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/spinner_background"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewSelectStartHour"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round_square"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:text="Starting hour"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:id="@+id/spinnerStartHour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/spinner_background"
+        android:minHeight="48dp"
+        android:visibility="invisible"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewSelectFinishHour"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round_square"
+        android:gravity="center"
+        android:text="Finishing Hour"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:id="@+id/spinnerFinishHour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/spinner_background"
+        android:minHeight="48dp"
+        android:visibility="invisible"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/buttonSaveChanges"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_design"
+        android:enabled="false"
+        android:text="Save Changes" />
+</LinearLayout>
